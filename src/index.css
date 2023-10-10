@@ -1,69 +1,251 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background-color: rgb(227, 217, 217);
+  width: 100%;
+  position: relative;
+}
+
+.header_con{
+  background-color: white;
+}
+
+.header_con .logo_{
+  padding: 4px 7px;
+  
+ 
+}
+
+.header_con .logo_ > span{
+  font-size: 1.1rem;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+.header_con .logo_ >div .logo_dot{
+  background-color: blue;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 12px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.header_con .serach_box > i{
+  font-size: 1.2rem;
+  position: relative;
+  left: 25px;
+  top: 1px;
+  color: blue;
+  cursor: pointer;
+}
+
+.header_con .serach_box input{
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(101, 101, 101, 0.215);
+  outline: none;
+  padding: 3px 10px;
+  padding-left: 25px;
+  font-size: 14px;
+  box-shadow: 0 0 1px 1px inset;
+}
+
+
+
+.header_con  .my_profile .pro_file .icon_vell{
+  background-color: rgba(255, 166, 0, 0.157);
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orange;
+  cursor: pointer;
+}
+
+.header_con .my_profile .pro_file .pro_img{
+ width: 30px;
+ height: 30px;
+ border-radius: 8px;
+ background-color: blue;
+ cursor: pointer;
+
+}
+
+.header_con .my_profile .pro_file .nam_info >div{
+  line-height: 11px;
+  font-size: 10px;
+}
+
+.header_con .my_profile .pro_file .down_{
+  position: relative;
+  top: -5px;
+}
+
+
+
+
+
+.side_ .sidebar_con{
+  position: relative;
+  height: 100vh;
+  width: 180px;
+  background-color: white;
+  padding: 2px 5px;
+}
+.side_ .sidebar_con .main_data{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.side_ .sidebar_con .main_data>h4{
+  margin: 0;
+  font-size: .9rem;
+  color: gray;
+  font-weight: 400;
+}
+.side_ .sidebar_con .main_data>h4 a{
+  text-decoration: none;
+  color: gray;
+}
+.side_ .sidebar_con .main_data>h4 a:hover{
+  text-decoration: none;
+  color: blue;
+}
+.side_ .sidebar_con .list_data{
+  position: relative;
+  left: -3px;
+  margin-top: 5px;
+}
+
+.side_ .sidebar_con .list_data .line_bl{
+  width: 3px;
+  background-color: gray;
+  border-radius: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -7px;
+}
+.side_ .sidebar_con .list_data a{
+  text-decoration: none;
+  color: inherit;
+}
+.side_ .sidebar_con .list_data a:hover{
+  color: blue;
+}
+.side_ .sidebar_con .list_data >div{
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  display: flex;
+}
+.side_{
+  position: fixed;
+}
+
+
+.side_ .sidebar_con .list_data2{
+  position: relative;
+  left: 8px;
+  margin-top: 5px;
+}
+
+
+.side_ .sidebar_con .data_link_{
+  width: 100%;
+}
+
+.side_ .sidebar_con .data_link_ >i {
+  position: absolute;
+  left: 30px;
+}
+.side_ .sidebar_con .data_link_ a {
+  position: relative;
+  left: -10px;
+}
+
+
+
+/* .dashboard_box .dashboard_use > div{
+  min-width: 100px;
+  min-height: ;
+} */
+
+
+.dashboard_div{
+  height: 100vh;
+}
+
+.dashboard_div2{
+  background-color: #fff;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 5px;
+  padding: 9px;
+}
+.dashboard_div .dashboard_div2> .info_dashboard .dashboard_name{
+ font-weight: 600;
+ font-size: 19px;
+}
+
+.dashboard_div .dashboard_div2> .info_dashboard .dashboard_invite{
+ font-weight: 400;
+ font-size: 11px;
+}
+
+
+
+.dashboard_div .dashboard_div2> .info_mail{
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
+}
+.dashboard_div .dashboard_div2> .info_mail > .pdi{
+  background-color: rgba(218, 112, 186, 0.21);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px ;
+}
+
+.dashboard_div .dashboard_div2> .info_mail > .pdi >.info_pdi div{
+  font-weight: 440;
+  white-space: nowrap;
+  font-size: 12px;
+
+}
+.dashboard_div .dashboard_div2> .info_mail > .pdi >.info_pdi h4{
+  font-size: 15px;
+}
+
+.dashboard_div .dashboard_div2> .info_mail > .pdi >.info_pdi P{
+  color: blue;
+  font-size: 10px;
+}
+
+.dashboard_div .dashboard_div2> .info_mail > .pdi{
+  min-height: 130px;
+}
+
+
+
+.dashboard_div .dashboard_div2> .info_mail > .pdi > .icon_pid > i{
+  background-color: rgba(255, 0, 0, 0.55);
+  padding: 4px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
 }
