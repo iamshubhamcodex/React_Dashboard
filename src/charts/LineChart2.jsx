@@ -22,36 +22,31 @@ ChartJS.register(
   PointElement,
   Filler
 );
-const LineChart = () => {
+const LineChart2 = () => {
   const data = {
-    labels: ["January", "February", "March", "April", "May"],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May",'jun','jul','aug','sep','oct','nov','dec'],
     datasets: [
       {
 
         label: {
           display: false,
         },
-        data: [65, 59, 80, 81, 56],
+        data: [10,20,30,40,60,80,110,150,200,250,260,250],
         borderColor: "blue",
         fill: false,
       },
 
-      {
-        label: "yearly Sales",
-        data: [55, 85, 40, 71, 66],
-        borderColor: "red",
-        fill: false,
-      },
+
     ],
   };
 
   return (
     <div className="container-fluid d-flex align-items-center justify-content-center">
-      <div className="row d-flex align-items-center justify-content-center mt-5">
-        <Line data={data} />
+      <div className="row d-flex align-items-center justify-content-center">
+        <div className="col-12"><Line data={data} /></div>
       </div>
     </div>
   );
 };
 
-export default LineChart;
+export default LineChart2;

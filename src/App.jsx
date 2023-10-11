@@ -3,9 +3,9 @@ import "./Charts.scss";
 import BarChart from "./charts/BarChart.jsx";
 import LineChart from "./charts/LineChart.jsx";
 import DoughnutChart from "./charts/DoughnutChart.jsx";
-
+import DoughnutSmall from "./charts/DoughnutSmall.jsx";
+import LineChart2 from "./charts/LineChart2.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 function App() {
   const [count, setCount] = useState(0);
 
@@ -180,17 +180,98 @@ function App() {
                   <div className="col-3 chart_2">
                     <div className="row">
                       <div className="col-11 charts">
-                      <DoughnutChart />
+                        <DoughnutChart />
                       </div>
                     </div>
                   </div>
                   <div className="col-4 chart_3">
                     <div className="row">
                       <div className="col-11 charts">
-                       <LineChart />
+                        <LineChart />
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div className="container-fluid chart_div mt-4">
+                <div className="row d-flex align-items-center justify-content-center">
+                  <div className="col-4 chart_1">
+                    <div className="row">
+                      <div className="col-11 charts"></div>
+                    </div>
+                  </div>
+                  <div className="col-4 chart_2">
+                    <div className="row">
+                      <div className="col-11 charts"></div>
+                    </div>
+                  </div>
+                  <div className="col-4 chart_3">
+                    <div className="row">
+                      <div className="col-11 charts"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="container-fluid chart_div mt-4">
+                <div className="row d-flex align-items-center justify-content-center">
+                  <div className="col-2 ">
+                    <div className="row">
+                      <div className="col-11 DoughnutChart">
+                        <DoughnutSmall />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 ">
+                    <div className="row">
+                      <div className="col-11 DoughnutChart">
+                        <DoughnutSmall />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 chart_3">
+                    <div className="row">
+                      <div className="col-11 DoughnutChart">
+                        <DoughnutSmall />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 chart_3">
+                    <div className="row">
+                      <div className="col-11 DoughnutChart">
+                        <DoughnutSmall />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 chart_3">
+                    <div className="row">
+                      <div className="col-11 DoughnutChart">
+                        <DoughnutSmall />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-2 chart_3">
+                    <div className="row">
+                      <div className="col-11 DoughnutChart">
+                        <DoughnutSmall />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="container-fluid chart_div mt-4">
+                <div className="row d-flex align-items-center justify-content-center">
+                  <div className="col-11 cha_rts">
+                    <div className="row d-flex align-items-center justify-content-center">
+                      <div className="col-12  d-flex align-items-center justify-content-center">
+                        <LineChart2 />
+                      </div>
+                    </div>
+                  </div>
+                 
+
                 </div>
               </div>
             </div>

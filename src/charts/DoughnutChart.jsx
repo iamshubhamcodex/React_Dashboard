@@ -24,7 +24,7 @@ import {
   );
 const DoughnutChart = () => {
   const data = {
-    labels: ['Direct', 'Socail', 'Referal'],
+    labels: ['Red', 'Blue', 'Yellow'],
     datasets: [
       {
         data: [300, 50, 100],
@@ -42,3 +42,14 @@ const DoughnutChart = () => {
 };
 
 export default DoughnutChart;
+
+
+
+
+
+
+
+
+
+
+

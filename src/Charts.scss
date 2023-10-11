@@ -4,5 +4,37 @@
     margin-left: 15px;
     border-radius: 5px;
     padding: 9px;
-    height: 250px;
+    height: 300px;
+  }
+
+  .cha_rts {
+    background-color: #fff;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 9px;
+    height: 350px;
+  }
+
+  .DoughnutChart{
+    background-color: #fff;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 9px;
+    height: 190px;
+  }
+
+  .doughnut-chart-container{
+    position: relative;
+  }
+  .doughnutCenter{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    font-size: 8px;
+  }
+  .dashboard_div{
+    height: 100vh;
+    overflow: scroll;
   }
