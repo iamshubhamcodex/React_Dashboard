@@ -5,6 +5,7 @@ import LineChart from "./charts/LineChart.jsx";
 import DoughnutChart from "./charts/DoughnutChart.jsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   const [count, setCount] = useState(0);
 
