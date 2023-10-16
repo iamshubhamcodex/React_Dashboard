@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillPieChart } from 'react-icons/ai';
 import { TbCloudBolt } from 'react-icons/tb';
-import DashBoard from '../pages/Dashboard1';
+// import DashBoard from '../pages/Dashboard1';
+import DashBoardTwo from '../pages/DashBoardTwo';
 
 const Sidebar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -47,8 +48,8 @@ const Sidebar = () => {
           )}
         </li>
     </div>
-      <DashBoard/>
-      
+      {/* <DashBoard/> */}
+      <DashBoardTwo/>
       </div>
   );
 };
