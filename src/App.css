@@ -10,13 +10,11 @@
   color: black;
   background-color: rgb(249 246 255);
   min-width: 100%;
-  
 }
 .sidebar {
   width: 250px;
   height: 88vh;
   background-color: #ffffff;
-  
 }
 
 ul {
@@ -200,7 +198,7 @@ a {
 .dashboard h4 {
   display: flex;
 }
-.dashboardtwo h3{
+.dashboardtwo h3 {
   display: flex;
   margin: 7px;
   margin-left: 1px;
@@ -332,16 +330,17 @@ a {
   text-align: left;
   margin-bottom: 15px;
   margin-left: 15px;
+  height: 250px;
+  display: grid;
+  place-content: center;
 }
-
 
 .failed-fivepercent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-.failed-fivepercent p{
+.failed-fivepercent p {
   border: 1px solid rgb(255, 0, 0);
   border-radius: 5px;
   padding: 0px 23px;
@@ -349,13 +348,12 @@ a {
   font-weight: 600;
 }
 
-
 .failed-parentline {
   background-color: rgba(255, 0, 0, 0.171);
   width: 70%;
   height: 10px;
   border-radius: 30px;
-  .failed-childline{
+  .failed-childline {
     background-color: rgb(255, 0, 0);
     width: 30%;
     height: 10px;
@@ -363,14 +361,14 @@ a {
   }
 }
 
-.In-Progress-fivepercent{
+.In-Progress-fivepercent {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.In-Progress-fivepercent p{
-  border: 1px solid  rgb(255, 187, 0);
+.In-Progress-fivepercent p {
+  border: 1px solid rgb(255, 187, 0);
   border-radius: 5px;
   padding: 0px 18px;
   background-color: rgba(255, 187, 0, 0.301);
@@ -382,7 +380,7 @@ a {
   width: 70%;
   height: 10px;
   border-radius: 30px;
-  .In-Progress-childline{
+  .In-Progress-childline {
     background-color: rgb(255, 187, 0);
     width: 60%;
     height: 10px;
@@ -390,17 +388,17 @@ a {
   }
 }
 
-.Successfully-Completed-fivepercent{
+.Successfully-Completed-fivepercent {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.Successfully-Completed-fivepercent p{
-  border: 1px solid  rgb(17, 199, 0);
+.Successfully-Completed-fivepercent p {
+  border: 1px solid rgb(17, 199, 0);
   border-radius: 5px;
   padding: 0px 18px;
-  background-color:rgba(81, 255, 0, 0.171);
+  background-color: rgba(81, 255, 0, 0.171);
   font-weight: 600;
 }
 
@@ -409,19 +407,18 @@ a {
   width: 70%;
   height: 10px;
   border-radius: 30px;
-  .Successfully-Completed-childline{
+  .Successfully-Completed-childline {
     background-color: rgb(17, 199, 0);
     width: 85%;
     height: 10px;
     border-radius: 30px;
   }
 }
-.fifthdiv p{
-font-size: 12px;
-margin: auto 15px;
-
+.fifthdiv p {
+  font-size: 12px;
+  margin: auto 15px;
 }
-.indnewbusiness{
+.indnewbusiness {
   background-color: #2269d4;
   display: flex;
   justify-content: space-between;
@@ -429,9 +426,9 @@ margin: auto 15px;
   height: 40px;
   color: #fff;
   border-radius: 5px;
- margin: 10px aut0;
+  margin: 10px aut0;
 }
-.misdetail{
+.misdetail {
   background-color: #f0ab2b;
   display: flex;
   justify-content: space-between;
@@ -439,9 +436,8 @@ margin: auto 15px;
   height: 40px;
   color: #fff;
   border-radius: 5px;
-
 }
-.IncPrecistencydump{
+.IncPrecistencydump {
   background-color: #22d490;
   display: flex;
   justify-content: space-between;
@@ -454,12 +450,12 @@ margin: auto 15px;
 /* Dashboardtwo css */
 .dashboardtwo {
   background-color: white;
-  border-radius: 25px;
-  width: 100%;
-  height: 25vh;
+  border-radius: 12px;
+  width: calc(100vw - 270px);
+  position: relative;
+  height: max-content;
   margin: 20px;
-  padding-left: 18px;
-  padding-top: 17px;
+  padding: 12px 18px;
   font-size: 15px;
   position: relative;
 }
@@ -488,29 +484,40 @@ margin: auto 15px;
   color: rgb(47, 0, 255);
 }
 .dashboardtwosixdivs {
-  position: absolute;
-  top: 100%;
-  height: 30vh;
   background-color: rgba(255, 255, 255, 0);
   margin: 20px;
-  right: 8px;
-  left: -17px;
   display: flex;
   flex-wrap: nowrap;
-  width: 100%;
+  width: calc(100vw - 270px);
   padding: 10px;
   box-sizing: border-box;
 }
 
 .six-separate-div {
-  flex: 0 1 calc(16%);
+  /* width: calc(calc(100vw - 270px) / 6); */
+  max-width: 185px;
+  /* flex: 0 1 calc(16%); */
+  height: max-content;
   background-color: #fff;
   border-radius: 5px;
   text-align: center;
   margin: 4px 15px;
-  border-radius: 25px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  position: relative;
 }
-.dashboardtwo-chartthree{
+.doughnut-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 22px;
+}
+.six-separate-div > h2 {
+  text-align: left;
+  font-size: 16px;
+}
+.dashboardtwo-chartthree {
   position: absolute;
   top: 100%;
   left: -17px;
@@ -522,5 +529,5 @@ margin: auto 15px;
   padding-left: 18px;
   padding-top: 17px;
   font-size: 15px;
-text-align: center;
+  text-align: center;
 }

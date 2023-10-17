@@ -62,9 +62,9 @@ const Sidebar = () => {
           )}
         </li>
       </div>
-      <DashBoard />
+      {/* <DashBoard /> */}
 
-      {/* <DashBoardTwo/> */}
+      <DashBoardTwo />
     </div>
   );
 };

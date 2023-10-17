@@ -1,0 +1,53 @@
+import React from "react";
+import { Doughnut } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  Title,
+  Tooltip,
+  LineElement,
+  Legend,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  Filler,
+} from "chart.js";
+
+ChartJS.register(
+  Title,
+  Tooltip,
+  LineElement,
+  Legend,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  Filler
+);
+const DoughnutChart = () => {
+  const data = {
+    datasets: [
+      {
+        data: [80, 20],
+        backgroundColor: ["rgba(75, 192, 192, 0.6)", "white"],
+        borderWidth: 6,
+      },
+    ],
+  };
+
+  const options = {
+    cutoutPercentage: 80,
+  };
+
+  //   {/* <div className="text-center doughnutCenter">
+  //   <h6 className='text-center'>80%</h6>
+  //   <p  className='text-center'>Completion</p>
+  // </div> */}
+  return (
+    <>
+      <h6 className="text-center doughnut-center">80%</h6>
+      {/* <p className="text-center">Completion</p> */}
+      <Doughnut data={data} options={options} />
+    </>
+  );
+};
+
+export default DoughnutChart;
