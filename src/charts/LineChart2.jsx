@@ -24,26 +24,36 @@ ChartJS.register(
 );
 const LineChart2 = () => {
   const data = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May",'jun','jul','aug','sep','oct','nov','dec'],
+    labels: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "jun",
+      "jul",
+      "aug",
+      "sep",
+      "oct",
+      "nov",
+      "dec",
+    ],
     datasets: [
       {
-
-        label: {
-          display: false,
-        },
-        data: [10,20,30,40,60,80,110,150,200,250,260,250],
+        label: "data",
+        data: [10, 20, 30, 40, 60, 80, 110, 150, 200, 250, 260, 250],
         borderColor: "blue",
         fill: false,
       },
-
-
     ],
   };
 
   return (
     <div className="container-fluid d-flex align-items-center justify-content-center">
       <div className="row d-flex align-items-center justify-content-center">
-        <div className="col-12"><Line data={data} /></div>
+        <div className="col-12">
+          <Line data={data} />
+        </div>
       </div>
     </div>
   );
